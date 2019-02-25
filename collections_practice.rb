@@ -66,9 +66,9 @@ def organize_schools(hash)
     organized[location[:location]] = []
   end
   organized.each do |city,array|
-    schools.each do |school,location|
-      if city == location[:location]
-        array << school
+    schools.each do |schoolA,locationA|
+      if city == locationA[:location]
+        array << schoolA
       end
     end
   end
