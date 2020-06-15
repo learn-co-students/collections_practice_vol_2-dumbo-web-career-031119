@@ -1,0 +1,27 @@
+
+[1mFrom:[0m /home/restful-chipset-9197/collections_practice_vol_2-dumbo-web-career-031119/collections_practice.rb @ line 56 Object#merge_data:
+
+    [1;34m37[0m: [32mdef[0m [1;34mmerge_data[0m(keys,data)
+    [1;34m38[0m:   answer=[]
+    [1;34m39[0m:   answer2=[]
+    [1;34m40[0m:     data.each [32mdo[0m |name_data|
+    [1;34m41[0m:       answer.push(name_data)
+    [1;34m42[0m:       answer2.push(name_data)
+    [1;34m43[0m:       keys.each [32mdo[0m |key|
+    [1;34m44[0m:         [32mif[0m answer[[1;34m1[0m] != key
+    [1;34m45[0m:           answer2.push(key)
+    [1;34m46[0m:       [1;34m# expected: [{:awesomeness=>10, :first_name=>"blake", :height=>"74", :last_name=>"johnson", :motto=>"Have a koala...":first_name=>"ashley", :height=>60, :last_name=>"dubs", :motto=>"I dub thee, 'Lady Brett Ashley'."}][0m
+    [1;34m47[0m: 
+    [1;34m48[0m:       [1;34m#key {:first_name=>"blake", :motto=>"Have a koala-ty day!"}[0m
+    [1;34m49[0m:       
+    [1;34m50[0m:       [1;34m#data {"blake"=>{:awesomeness=>10, :height=>"74", :last_name=>"johnson"}, "ashley"=>{:awesomeness=>9, :height=>60, :last_name=>"dubs"}}[0m
+    [1;34m51[0m: 
+    [1;34m52[0m:   [32mend[0m 
+    [1;34m53[0m: [32mend[0m
+    [1;34m54[0m: answer.concat(answer2)
+    [1;34m55[0m: answer
+ => [1;34m56[0m: binding.pry
+    [1;34m57[0m: [32mend[0m
+    [1;34m58[0m: 
+    [1;34m59[0m: [32mend[0m
+
